@@ -1,0 +1,12 @@
+{
+  "name": "comprint-back",
+  "description": "Holistic FastAPI backend development plugin for Claude Code",
+  "plugins": [
+    {
+      "name": "comprint-back",
+      "description": "Complete FastAPI development system — architecture, auth, database, testing, and more",
+      "version": "1.0.0",
+      "source": "./"
+    }
+  ]
+}

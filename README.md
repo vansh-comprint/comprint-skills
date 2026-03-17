@@ -7,7 +7,11 @@ Built on **FastAPI + Pydantic v2 + SQLAlchemy 2.0 async + PostgreSQL** with prod
 ## Installation
 
 ```bash
-/plugin install --source github:vansh-comprint/backend-skill
+# Step 1: Add the marketplace
+/plugin marketplace add vansh-comprint/backend-skill
+
+# Step 2: Install the plugin
+/plugin install comprint-back
 ```
 
 That's it. `/comprint-back` is immediately available.
