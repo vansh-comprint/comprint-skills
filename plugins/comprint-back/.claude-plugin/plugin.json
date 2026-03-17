@@ -5,6 +5,5 @@
   "author": {
     "name": "Comprint"
   },
-  "category": "development",
   "keywords": ["fastapi", "python", "backend", "api"]
 }
