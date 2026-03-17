@@ -6,7 +6,7 @@ A growing collection of Claude Code plugins by Comprint.
 
 ```bash
 # Add the marketplace (one-time)
-/plugin marketplace add vansh-comprint/backend-skill
+/plugin marketplace add vansh-comprint/comprint-skills
 
 # Install any plugin
 /plugin install comprint-back
