@@ -1,13 +1,12 @@
 {
   "name": "comprint-skills",
-  "description": "Comprint's collection of Claude Code plugins — backend development, marketing automation, and more.",
   "owner": {
     "name": "Comprint"
   },
   "plugins": [
     {
       "name": "comprint-back",
-      "description": "FastAPI development with 9 curated knowledge areas — architecture, API design, database, security, exceptions, logging, testing, background tasks, and common error prevention. Smart routing loads only what you need.",
+      "description": "FastAPI development with 9 curated knowledge areas — architecture, API design, database, security, exceptions, logging, testing, background tasks, and common error prevention.",
       "version": "1.0.0",
       "source": "./plugins/comprint-back"
     },
