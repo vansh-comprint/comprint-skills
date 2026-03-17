@@ -1,0 +1,9 @@
+{
+  "name": "comprint-prompt-improver",
+  "description": "Intercepts vague prompts and enriches them with codebase research and targeted clarifying questions before execution",
+  "version": "1.0.0",
+  "author": {
+    "name": "Comprint"
+  },
+  "keywords": ["prompt", "productivity", "clarification", "research"]
+}

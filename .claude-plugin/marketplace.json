@@ -15,6 +15,12 @@
       "description": "Marketing Agency OS — brand management, content generation, competitive intelligence, and growth tracking. 16 commands covering the full agency workflow.",
       "version": "1.0.0",
       "source": "./plugins/comprint-marketing"
+    },
+    {
+      "name": "comprint-prompt-improver",
+      "description": "Catches vague prompts, researches your codebase, asks smart clarifying questions, then executes with full context.",
+      "version": "1.0.0",
+      "source": "./plugins/comprint-prompt-improver"
     }
   ]
 }

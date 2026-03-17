@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/plugins-2-blue?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiPjxyZWN0IHg9IjMiIHk9IjMiIHdpZHRoPSI3IiBoZWlnaHQ9IjciIHJ4PSIxIi8+PHJlY3QgeD0iMTQiIHk9IjMiIHdpZHRoPSI3IiBoZWlnaHQ9IjciIHJ4PSIxIi8+PHJlY3QgeD0iMyIgeT0iMTQiIHdpZHRoPSI3IiBoZWlnaHQ9IjciIHJ4PSIxIi8+PHJlY3QgeD0iMTQiIHk9IjE0IiB3aWR0aD0iNyIgaGVpZ2h0PSI3IiByeD0iMSIvPjwvc3ZnPg==">
+  <img src="https://img.shields.io/badge/plugins-3-blue?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiPjxyZWN0IHg9IjMiIHk9IjMiIHdpZHRoPSI3IiBoZWlnaHQ9IjciIHJ4PSIxIi8+PHJlY3QgeD0iMTQiIHk9IjMiIHdpZHRoPSI3IiBoZWlnaHQ9IjciIHJ4PSIxIi8+PHJlY3QgeD0iMyIgeT0iMTQiIHdpZHRoPSI3IiBoZWlnaHQ9IjciIHJ4PSIxIi8+PHJlY3QgeD0iMTQiIHk9IjE0IiB3aWR0aD0iNyIgaGVpZ2h0PSI3IiByeD0iMSIvPjwvc3ZnPg==">
   <img src="https://img.shields.io/badge/python-3.12+-3776AB?style=flat-square&logo=python&logoColor=white">
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square">
   <img src="https://img.shields.io/badge/claude_code-compatible-8A2BE2?style=flat-square">
@@ -25,6 +25,7 @@
 # Install what you need
 /plugin install comprint-back
 /plugin install comprint-marketing
+/plugin install comprint-prompt-improver
 ```
 
 ---
@@ -152,6 +153,24 @@ Plus a shared **Content Intelligence Framework** covering hook engineering, stor
 
 ---
 
+### 🎯 comprint-prompt-improver
+
+**Catches vague prompts before they waste your time.**
+
+A lightweight hook evaluates every prompt. Clear ones pass through instantly. Vague ones get researched — your codebase, conversation history, git log — then you get 1-6 targeted questions before execution.
+
+```
+"fix the bug"        → researches recent errors, asks which one
+"refactor the code"  → explores codebase, asks scope + approach
+"add auth"           → checks your stack, asks auth method
+```
+
+Bypass with `*` prefix to skip evaluation. Slash commands and `#` notes pass through automatically.
+
+> 📖 [Full documentation →](plugins/comprint-prompt-improver/README.md) · Based on [prompt-improver](https://github.com/severity1/prompt-improver) by severity1
+
+---
+
 ## Contributing
 
 Want to add a plugin? Drop it in `plugins/your-plugin/` and open a PR.
@@ -160,6 +179,7 @@ Want to add a plugin? Drop it in `plugins/your-plugin/` and open a PR.
 plugins/
 ├── comprint-back/          ← FastAPI backend
 ├── comprint-marketing/     ← Marketing agency OS
+├── comprint-prompt-improver/ ← Prompt enrichment
 ├── your-plugin/            ← yours
 │   ├── .claude-plugin/
 │   │   └── plugin.json
