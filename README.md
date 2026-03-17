@@ -5,7 +5,7 @@
 <p align="center">
   <a href="#quick-start"><img src="https://img.shields.io/badge/Get_Started-blue?style=for-the-badge" alt="Get Started"></a>
   <a href="#plugins"><img src="https://img.shields.io/badge/Browse_Plugins-purple?style=for-the-badge" alt="Browse Plugins"></a>
-  <a href="#coming-soon"><img src="https://img.shields.io/badge/Coming_Soon-orange?style=for-the-badge" alt="Coming Soon"></a>
+  <a href="#contributing"><img src="https://img.shields.io/badge/Contribute-orange?style=for-the-badge" alt="Contribute"></a>
 </p>
 
 <p align="center">
@@ -90,16 +90,6 @@ FastAPI · Pydantic v2 · SQLAlchemy 2.0 async · PostgreSQL · AsyncPG · Alemb
 <br>
 
 > 📖 [Full documentation →](plugins/comprint-back/README.md)
-
----
-
-## Coming Soon
-
-| Plugin | Status | Description |
-|--------|--------|-------------|
-| **comprint-guard** | 🔬 In research | Architectural guardrails — catches violations on every file write |
-| **comprint-scaffold** | 📋 Planned | Full project generator with Docker, CI/CD, and health checks in 60 seconds |
-| **comprint-api-test** | 📋 Planned | Auto-generates integration tests from your OpenAPI schema |
 
 ---
 
