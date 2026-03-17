@@ -1,21 +1,18 @@
-```
-   ___                          _       _     ____  _    _ _ _
-  / __|___ _ __  _ __ _ _ _ _ _| |_    | |   / ___|| | _(_) | |___
- | |  / _ \ '  \| '_ \ '_| | | ' \|   |  \___ \| |/ / | | / __|
- | |_| (_) | |_| | .__/_| |_|_|_||_|    ___) |   <| | | \__ \
-  \___\___/|_|_|_|_|            |____|  |____/|_|\_\_|_|_|___/
-```
-
 <p align="center">
-  <strong>A growing collection of Claude Code plugins by Comprint.</strong>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=220&section=header&text=Comprint%20Skills&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Claude%20Code%20Plugin%20Marketplace&descSize=18&descAlignY=55&descColor=8b949e" width="100%"/>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.0.0-blue?style=flat-square" alt="version">
-  <img src="https://img.shields.io/badge/plugins-1-brightgreen?style=flat-square" alt="plugins">
-  <img src="https://img.shields.io/badge/python-3.12+-yellow?style=flat-square" alt="python">
-  <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="license">
-  <img src="https://img.shields.io/badge/claude_code-plugin-8A2BE2?style=flat-square" alt="claude code">
+  <a href="#quick-start"><img src="https://img.shields.io/badge/Get_Started-blue?style=for-the-badge" alt="Get Started"></a>
+  <a href="#plugins"><img src="https://img.shields.io/badge/Browse_Plugins-purple?style=for-the-badge" alt="Browse Plugins"></a>
+  <a href="#coming-soon"><img src="https://img.shields.io/badge/Coming_Soon-orange?style=for-the-badge" alt="Coming Soon"></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/plugins-1-blue?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiPjxyZWN0IHg9IjMiIHk9IjMiIHdpZHRoPSI3IiBoZWlnaHQ9IjciIHJ4PSIxIi8+PHJlY3QgeD0iMTQiIHk9IjMiIHdpZHRoPSI3IiBoZWlnaHQ9IjciIHJ4PSIxIi8+PHJlY3QgeD0iMyIgeT0iMTQiIHdpZHRoPSI3IiBoZWlnaHQ9IjciIHJ4PSIxIi8+PHJlY3QgeD0iMTQiIHk9IjE0IiB3aWR0aD0iNyIgaGVpZ2h0PSI3IiByeD0iMSIvPjwvc3ZnPg==">
+  <img src="https://img.shields.io/badge/python-3.12+-3776AB?style=flat-square&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square">
+  <img src="https://img.shields.io/badge/claude_code-compatible-8A2BE2?style=flat-square">
 </p>
 
 ---
@@ -23,150 +20,110 @@
 ## Quick Start
 
 ```bash
-# Add the marketplace (one-time)
 /plugin marketplace add vansh-comprint/comprint-skills
-
-# Install a plugin
 /plugin install comprint-back
-
-# Start using it
-/comprint-back scaffold a new FastAPI project with auth
 ```
 
-That's it. Three commands. You're live.
+Done. `/comprint-back` is live.
 
 ---
 
 ## Plugins
 
-### `comprint-back` — FastAPI Backend Engine
+### ⚡ comprint-back
 
-> Your entire FastAPI stack in one command. Architecture, auth, database, testing — all grounded in production patterns.
+**The complete FastAPI development system.**
 
-```
- You                          comprint-back
-  │                                │
-  │  "add user auth with JWT"      │
-  │ ──────────────────────────────>│
-  │                                │ ── Classifies: Auth Work
-  │                                │ ── Loads: security.md + api-design.md
-  │                                │ ── Reads your codebase
-  │                                │ ── Designs approach
-  │  "Here's what I'll build..."   │
-  │ <──────────────────────────────│
-  │                                │
-  │  "looks good, go"              │
-  │ ──────────────────────────────>│
-  │                                │ ── Implements using reference patterns
-  │                                │ ── Validates: exists? substantive? wired?
-  │  JWT + RBAC + endpoints done   │
-  │ <──────────────────────────────│
-```
-
-#### 9 Knowledge Areas
+One command handles your entire backend — from scaffolding a new project to debugging a 422 error. It carries 9 curated knowledge areas and loads only what's relevant to your task.
 
 ```
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐
-│ Architecture │ │  API Design │ │  Database   │
-│              │ │              │ │              │
-│ 4-layer arch │ │ 5-field resp │ │ Async SQLAl- │
-│ Simple+Mod-  │ │ CRUD patter- │ │ chemy, repos │
-│ ular layouts │ │ ns, schemas  │ │ Alembic mig- │
-│ DI patterns  │ │ Versioning   │ │ rations      │
-└─────────────┘ └─────────────┘ └─────────────┘
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐
-│  Security   │ │   Errors    │ │   Logging   │
-│              │ │              │ │              │
-│ JWT access+  │ │ Exception   │ │ Structured  │
-│ refresh, RBAC│ │ hierarchy,  │ │ JSON, req ID │
-│ CORS, rate   │ │ FE-friendly │ │ tracing,    │
-│ limiting     │ │ handlers    │ │ ContextVar  │
-└─────────────┘ └─────────────┘ └─────────────┘
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐
-│   Testing   │ │  Background │ │   Common    │
-│              │ │    Tasks    │ │   Errors    │
-│ Async fixtu- │ │              │ │              │
-│ res, FakeRe- │ │ Celery vs   │ │ 10 document-│
-│ pository, no │ │ BG Tasks,   │ │ ed preventi-│
-│ mocking      │ │ scheduling  │ │ on patterns │
-└─────────────┘ └─────────────┘ └─────────────┘
+/comprint-back scaffold a new FastAPI project with auth and database
+/comprint-back add a CRUD endpoint for products with pagination
+/comprint-back set up JWT with role-based access control
+/comprint-back fix this 422 validation error
 ```
 
-#### Smart Routing
+<details>
+<summary><b>🔍 See all 9 knowledge areas</b></summary>
 
-The plugin doesn't dump everything into context. It reads your request, picks the right knowledge areas, and loads only what's relevant.
+<br>
+
+| | Domain | What's inside |
+|---|--------|--------------|
+| 🏗️ | **Architecture** | 4-layer pattern, simple + modular project layouts, dependency injection |
+| 🔌 | **API Design** | Standardized 5-field responses, CRUD patterns, Pydantic schemas, versioning |
+| 🗃️ | **Database** | Async SQLAlchemy 2.0, generic repositories, Alembic migrations, query optimization |
+| 🔐 | **Security** | JWT access + refresh tokens, RBAC, CORS, rate limiting, security audit checklist |
+| ⚠️ | **Errors** | Exception hierarchy, global handlers, validation formatting, FE-friendly responses |
+| 📋 | **Logging** | Structured JSON, request ID tracing, ContextVar propagation |
+| 🧪 | **Testing** | Async fixtures, FakeRepository (no mocking), integration tests, coverage config |
+| ⏱️ | **Background Tasks** | Celery vs BackgroundTasks, scheduling, Docker Compose workers |
+| 🐛 | **Common Errors** | 10 prevention patterns — Pydantic v2 gotchas, async traps, CORS, form quirks |
+
+</details>
+
+<details>
+<summary><b>🧠 How smart routing works</b></summary>
+
+<br>
+
+The plugin doesn't dump everything into context. It classifies your request and loads only the relevant knowledge.
 
 | You say | It loads |
 |---------|----------|
-| `add authentication` | security + api-design |
-| `new project` | architecture + database + logging |
-| `fix this 500` | common-errors + exceptions |
-| `add background jobs` | background-tasks |
-| `something's broken` | investigates first, then decides |
+| "add authentication" | `security.md` + `api-design.md` |
+| "new project" | `architecture.md` + `database.md` + `logging.md` |
+| "fix this 500" | `common-errors.md` + `exceptions.md` |
+| "something's broken" | Investigates first, then decides |
 
-#### Tech Stack
+</details>
 
-```
-FastAPI · Pydantic v2 · SQLAlchemy 2.0 async · PostgreSQL · AsyncPG
-Alembic · pytest · httpx · Celery · Redis · JWT · bcrypt
-```
+<details>
+<summary><b>🛠️ Built on</b></summary>
 
-#### Example Commands
+<br>
 
-```bash
-/comprint-back scaffold a new FastAPI project with auth and database
-/comprint-back add a CRUD endpoint for products with pagination
-/comprint-back set up JWT authentication with role-based access control
-/comprint-back fix this 422 validation error
-/comprint-back add Celery background tasks with Redis
-/comprint-back refactor this module to use the repository pattern
-```
+FastAPI · Pydantic v2 · SQLAlchemy 2.0 async · PostgreSQL · AsyncPG · Alembic · pytest · httpx · Celery · Redis · JWT · bcrypt
 
----
+</details>
 
-## How It Works
+<br>
 
-Every plugin in this marketplace follows the same principle: **read before write**.
-
-```
-Request ──> Classify ──> Load relevant knowledge ──> Read your codebase
-                                                          │
-        Done <── Validate <── Implement <── Design ───────┘
-                                              │
-                                         You approve
-```
-
-No generic suggestions. No hallucinated patterns. The plugin reads your existing code, loads curated reference patterns, and adapts to what's already there.
+> 📖 [Full documentation →](plugins/comprint-back/README.md)
 
 ---
 
 ## Coming Soon
 
-| Plugin | What it does |
-|--------|-------------|
-| `comprint-guard` | Real-time architectural guardrails — catches violations on every file write |
-| `comprint-scaffold` | Full project generator — Docker, CI/CD, Alembic, logging, health checks in 60 seconds |
-| `comprint-api-test` | Auto-generates integration tests from your OpenAPI schema |
+| Plugin | Status | Description |
+|--------|--------|-------------|
+| **comprint-guard** | 🔬 In research | Architectural guardrails — catches violations on every file write |
+| **comprint-scaffold** | 📋 Planned | Full project generator with Docker, CI/CD, and health checks in 60 seconds |
+| **comprint-api-test** | 📋 Planned | Auto-generates integration tests from your OpenAPI schema |
 
 ---
 
-## Installation
-
-```bash
-# Add the marketplace
-/plugin marketplace add vansh-comprint/comprint-skills
-
-# Browse available plugins
-/plugin list
-
-# Install what you need
-/plugin install comprint-back
-```
-
 ## Contributing
 
-Want to add a plugin to this marketplace? Open a PR with your plugin in `plugins/your-plugin-name/` following the structure of existing plugins.
+Want to add a plugin? Drop it in `plugins/your-plugin/` and open a PR.
 
-## License
+```
+plugins/
+├── comprint-back/          ← existing
+├── your-plugin/            ← yours
+│   ├── .claude-plugin/
+│   │   └── plugin.json
+│   ├── commands/
+│   ├── skills/
+│   └── references/
+```
 
-MIT
+---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:1f6feb&height=120&section=footer" width="100%"/>
+</p>
+
+<p align="center">
+  <sub>Built by <a href="https://github.com/vansh-comprint">Comprint</a></sub>
+</p>
