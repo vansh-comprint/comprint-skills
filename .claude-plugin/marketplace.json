@@ -1,6 +1,9 @@
 {
   "name": "comprint-back",
   "description": "Production-ready FastAPI backend development plugin for Claude Code. Covers the full stack: project scaffolding, async SQLAlchemy, JWT auth, RBAC, error handling, testing, background tasks, and 10 documented error prevention patterns.",
+  "owner": {
+    "name": "Comprint"
+  },
   "plugins": [
     {
       "name": "comprint-back",
